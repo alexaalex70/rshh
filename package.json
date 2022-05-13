@@ -1,0 +1,146 @@
+{
+  "name": "resethealth",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "ENVFILE=.env.gondor react-native run-android",
+    "ios": "ENVFILE=.env.gondor react-native run-ios",
+    "start": "ENVFILE=.env.gondor react-native start",
+    "android:qa": "ENVFILE=.env.rohan react-native run-android",
+    "ios:qa": "ENVFILE=.env.rohan react-native run-ios",
+    "start:qa": "ENVFILE=.env.rohan react-native start",
+    "android:hot": "ENVFILE=.env.mordor react-native run-android",
+    "ios:hot": "ENVFILE=.env.mordor react-native run-ios",
+    "start:hot": "ENVFILE=.env.mordor react-native start",
+    "android:prod": "ENVFILE=.env.prod react-native run-android",
+    "ios:prod": "ENVFILE=.env.prod react-native run-ios",
+    "start:prod": "ENVFILE=.env.prod react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json,tsx,ts}\"",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook",
+    "prestorybook": "rnstl",
+    "postinstall": "npmpd",
+    "clear-caches": "watchman watch-del-all && rm -rf ~/Library/Developer/Xcode/DerivedData && npm run clear-metro-cache",
+    "clear-metro-cache": "rm -rf $TMPDIR/metro-*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|ts|jsx|tsx)": [
+      "eslint --cache --fix"
+    ]
+  },
+  "dependencies": {
+    "@formatjs/intl-datetimeformat": "^5.0.0",
+    "@formatjs/intl-displaynames": "^5.4.2",
+    "@formatjs/intl-getcanonicallocales": "^1.9.0",
+    "@formatjs/intl-listformat": "^6.5.2",
+    "@formatjs/intl-locale": "^2.4.45",
+    "@formatjs/intl-numberformat": "^7.4.2",
+    "@formatjs/intl-pluralrules": "^4.3.2",
+    "@formatjs/intl-relativetimeformat": "^10.0.0",
+    "@react-native-async-storage/async-storage": "^1.16.1",
+    "@react-native-community/datetimepicker": "^3.5.2",
+    "@react-native-community/netinfo": "^8.0.0",
+    "@react-navigation/drawer": "^6.1.8",
+    "@react-navigation/elements": "^1.3.3",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.5.0",
+    "@react-navigation/stack": "^6.0.11",
+    "amazon-cognito-identity-js": "^5.2.6",
+    "aws-amplify": "^4.3.14",
+    "axios": "^0.22.0",
+    "ios-deploy": "^1.11.4",
+    "javascript-time-ago": "^2.3.10",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.1",
+    "npm-platform-dependencies": "^0.1.0",
+    "react": "17.0.2",
+    "react-hook-form": "^7.20.5",
+    "react-native": "^0.66.4",
+    "react-native-autolink": "^4.0.0",
+    "react-native-dotenv": "^3.2.0",
+    "react-native-dropdown-picker": "^5.1.28",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-inappbrowser-reborn": "^3.6.3",
+    "react-native-localize": "^2.1.9",
+    "react-native-modal": "^13.0.1",
+    "react-native-paper": "^4.9.2",
+    "react-native-paper-dates": "^0.8.6",
+    "react-native-reanimated": "^1.4.0",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.8.0",
+    "react-native-splash-screen": "^3.3.0",
+    "react-native-user-avatar": "^1.0.8",
+    "react-native-vector-icons": "^8.1.0",
+    "react-query": "^3.27.0",
+    "react-redux": "^7.2.5",
+    "react-ridge-translations": "^1.0.4",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.1.3",
+    "rh-shared": "git@bitbucket.org:reset-health/rh-frontend-shared.git#master"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-knobs": "^5.3.21",
+    "@storybook/addon-links": "^5.3.21",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.65.0",
+    "@types/react-native-dotenv": "^0.2.0",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.14.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unused-imports": "~1.0.3",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^12.4.0",
+    "metro-react-native-babel-preset": "^0.66.0",
+    "prettier": "^2.5.1",
+    "react-dom": "^17.0.2",
+    "react-native-codegen": "^0.0.7",
+    "react-native-storybook-loader": "^2.0.4",
+    "react-test-renderer": "17.0.2",
+    "typescript": "^3.8.3"
+  },
+  "resolutions": {
+    "@types/react": "^17"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src/components/"
+      ],
+      "pattern": "**/**/*.stories.js"
+    }
+  },
+  "darwinDependencies": {
+    "ios-deploy": "^1.11.4"
+  }
+}

@@ -1,0 +1,126 @@
+Release notes:
+
+Build 138 Rohan
+RP-2171 remove summary label/placeholder
+RP-2161 Organisation Code in Onboarding Question summary
+RP-2078 update channel notifications properly
+RP-2078 using allStacks
+RP-2177 Clinician Channel is not visible after Sign up in Mobile app
+
+Build 137 Rohan
+RP-2066 Dropdown values are not displayed after re-selection
+RP-2159 'Next' button remains disabled after checking the 'Consent Treatment policy' checkbox
+RP-2141 On the summary page of the diabetes question set i cannot go back
+RP-2164 incorrect message type in the mentor channel
+RP-2119 option to block the Mentor or vice-versa
+fixed sent text in message header to only appear on my stacks
+RP-2122 remove back behaviour on HomepageScreen
+fixes for TS
+removed unused variables, changed interface name
+sing-up-part-2-fix
+fix-sign-up-flow
+
+Build 135 Rohan
+Build 136 Gondor
+RP-2085 “Next” button is hidden by the keyboard
+RP-2136 Consent should be mandatory
+RP-2145 Issue while entering a wrong verification code
+
+Build 133 Rohan
+Build 134 Prod
+2038 - Sex at birth
+1932-title-fix
+fix-for-assigned-sex-qs
+removed-logs
+
+Build 132 Rohan
+RP-2129: fix showing mentor names
+RP-1932- help modal dialog style fix
+RP-2084 - conditional questions logic fix
+
+Build 126-131 Nightly builds on Rohan
+Changing the sign-out mechanism
+Fixed type error for certain answer structure
+Fixed styling + incorrect saga use
+Unread message fixes
+
+Build 124 Rohan
+Build 125 Mordor
+RP-2038 Getting the Female based questions in Onboarding Question Set when my Assigned Sex at birth is Male
+RP-2120 text area component where members writes a message should be aligned on top (iOS) when writing a message
+RP-2095 On Question Cards, text entry area needs to be more than one line to accommodate a paragraph rather than a line.
+
+Build 122 Rohan
+Build 123 Mordor
+RP-2110: home screen title changes
+
+Build 120 Rohan
+Build 121 Mordor
+header of homepage now scrolls with the list
+external titles, 
+ts errors fixed, 
+checks for system msgs in channels
+removed bug where list would be on appBar
+integrated sticky footer with keyboard
+cleaned Channel Screen (CardScreen)
+RP-1982 /pencil is disabled after reporting
+
+Build 116 Rohan
+Build 117 Mordor
+added summary text in preview
+added autolink for generated question ( RP-2046 )
+wrapper for checkbox text ( RP-2035 )
+removing system to mentor if im not mentor
+added packages to package.json
+move cta on QS ( RP-2045 )
+
+Build 115 Rohan
+Build 114 Mordor
+Fixes for refresh token and runaway loop
+
+
+Build 109 Rohan
+Build 110 Mordor
+Channel status fixed in Channel info panel
+Eligibility showing pending, ineligible or eligible
+email validation fixed
+Date add to time in timeline
+
+Build 108 Mordor
+Home Address validation text removed
+DoB validation messages changed
+Added channel refreshing and fixed race condition in Homepage component
+Added profile refresh
+Fixed profile ID reference
+
+Build 106 Rohan
+Build 105 Prod
+Build 104
+removed unused variables
+changed copy for modal when blocking user
+
+Build 103
+created new component for reporting abuse
+implementing reporting abuse and modal on timeline
+remove ‘sent’ from clinician messages as they weren’t supposed to be there
+
+Build 102
+add redirection to Welcome page when signing out
+restyling modal window
+removed help/hint icon on unnecessary screens
+disable notification icon if 0 notification
+
+Build 101
+changed label for dropdown
+changed the conditionals as andrew mentioned
+
+Build 99
+Removed react-navigation v4
+Added correct AppBar for Action Centre
+Removed console.log from timeline
+Refetching for channels once we back on homepage
+Fixed red dot for mentor channel
+Fix for mentor
+Fix for Action Centre
+Fix for accessState
+Fix for dropdown issue

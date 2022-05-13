@@ -1,0 +1,6 @@
+module Pods_ResetHealth {
+  umbrella header "Pods-ResetHealth-umbrella.h"
+
+  export *
+  module * { export * }
+}

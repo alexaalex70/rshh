@@ -1,0 +1,14 @@
+com/resethealth/MainApplication.java
+ com.resethealth.MainApplication
+ com.resethealth.MainApplication$1
+com/resethealth/ReactNativeFlipper.java
+ com.resethealth.ReactNativeFlipper
+ com.resethealth.ReactNativeFlipper$1
+ com.resethealth.ReactNativeFlipper$2
+ com.resethealth.ReactNativeFlipper$2$1
+com/resethealth/BuildConfig.java
+ com.resethealth.BuildConfig
+com/resethealth/MainActivity.java
+ com.resethealth.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
